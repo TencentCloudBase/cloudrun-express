@@ -42,10 +42,6 @@ npm start
 
 启动浏览器并导航至 http://localhost:3000 以查看该应用程序。
 
-### 源码
-
-[cloudrun-express](https://github.com/TencentCloudBase/tcbr-templates/tree/main/cloudrun-express)
-
 ### 部署到云托管
 
 1、在cloudrun-express目录下创建一个名称为Dockerfile的新文件,内容如下:

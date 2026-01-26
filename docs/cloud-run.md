@@ -202,47 +202,6 @@ tcb run init
 tcb run deploy --port 8080
 ```
 
-### 配置文件部署
-
-创建 `cloudbaserc.json` 配置文件：
-
-```json
-{
-  "envId": "your-env-id",
-  "framework": {
-    "name": "express",
-    "plugins": {
-      "run": {
-        "name": "@cloudbase/framework-plugin-run",
-        "options": {
-          "serviceName": "cloudrun-express-service",
-          "servicePath": "/",
-          "localPath": "./",
-          "dockerfile": "./Dockerfile",
-          "buildDir": "./",
-          "cpu": 0.25,
-          "mem": 0.5,
-          "minNum": 1,
-          "maxNum": 10,
-          "policyType": "cpu",
-          "policyThreshold": 60,
-          "containerPort": 8080,
-          "envVariables": {
-            "NODE_ENV": "production"
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-然后执行部署：
-
-```bash
-tcb framework deploy
-```
-
 ## 访问应用
 
 ### 获取访问地址

@@ -128,18 +128,7 @@ cloudrun-express/
 9. **自动安装依赖**：开启此选项
 10. 点击「创建」按钮等待部署完成
 
-### 通过 CLI 部署
-
-```bash
-# 安装 CloudBase CLI
-npm install -g @cloudbase/cli
-
-# 登录
-tcb login
-
-# 部署云函数
-tcb functions:deploy cloudrun-express --dir ./
-```
+### 通过 CLI 部署(敬请期待)
 
 ### 打包部署
 
